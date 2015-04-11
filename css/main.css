@@ -7,7 +7,7 @@
 /* Toggle Styles */
 
 #wrapper {
-    padding-left: 0;
+    padding-left: 50px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -15,7 +15,7 @@
 }
 
 #wrapper.toggled {
-    padding-left: 150px;
+    padding-left: 200px;
 }
 
 #sidebar-wrapper {
@@ -33,10 +33,46 @@
     transition: all 0.5s ease;
 }
 
+#sidebar-wrapper2 {
+    z-index: 1000;
+    position: fixed;
+    left: 0px;
+    width: 50px;
+    height: 100%;
+    margin-left: 0px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	background-color:#fff;
+}
+#menu-toggle{
+	color:#000; 
+	font-size:26px; 
+	width:50px; 
+	list-style-type: none;
+	margin:0; 
+	padding:0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	text-align:center;
+}
+#menu-toggle:hover{
+	background-color:#000;
+	color:#fff;
+	cursor:pointer;
+}
+
 #wrapper.toggled #sidebar-wrapper {
     width: 150px;
 }
-
+#wrapper.toggled #sidebar-wrapper2 {
+	left:150px;
+}
 #page-content-wrapper {
     width: 100%;
     position: absolute;
@@ -85,7 +121,6 @@
     height: 65px;
     font-size: 18px;
     line-height: 60px;
-	text-indent: 0px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -99,7 +134,7 @@
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 150px;
+        padding-left: 200px;
     }
 
     #wrapper.toggled {
@@ -109,11 +144,19 @@
     #sidebar-wrapper {
         width: 150px;
     }
-
-    #wrapper.toggled #sidebar-wrapper {
+	#sidebar-wrapper2{
         width: 50px;
+		left:150px;
     }
-
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0px;
+    }
+	#wrapper.toggled #sidebar-wrapper2 {
+        left:0px;
+		width:50px;
+		position:absolute;
+		margin-right:0;
+    }
     #page-content-wrapper {
         padding: 20px;
         position: relative;
