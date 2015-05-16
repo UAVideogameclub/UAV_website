@@ -5,6 +5,10 @@
  */
 
 /* Toggle Styles */
+body{
+	background-color:#101010;
+	color:#464646;
+}
 
 #wrapper {
     padding-left: 50px;
@@ -46,10 +50,10 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-	background-color:#fff;
+	background-color:#000;
 }
 #menu-toggle{
-	color:#000; 
+	color:#fff; 
 	font-size:26px; 
 	width:50px; 
 	list-style-type: none;
@@ -62,11 +66,29 @@
 	text-align:center;
 }
 #menu-toggle:hover{
-	background-color:#000;
-	color:#fff;
+	background-color:#fff;
+	color:#000;
 	cursor:pointer;
 }
-
+#social-media{
+	color:#fff; 
+	font-size:26px; 
+	width:50px; 
+	list-style-type: none;
+	margin:0; 
+	padding:5px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	text-align:center;
+}
+#social-media:hover{
+	
+}
+#social-media li{
+	margin-top:50%;
+}
 #wrapper.toggled #sidebar-wrapper {
     width: 150px;
 }
