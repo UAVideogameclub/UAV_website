@@ -20,12 +20,15 @@
 	<style>
 		p { color: #888888; }
 		b { color: #CCCCCC; }
-		p a {
+		.colorlink, p a {
 			color: #d8dc8c; 
 			text-decoration: none; }
-		p a:hover {
+		.colorlink:hover, p a:hover {
 			color: #eceec7;
 			text-decoration: none; }
+		.centerBlock {
+                display: table;
+                margin: 0 auto;	}
 	</style>
 	
     <title>UAV Club</title>
@@ -40,7 +43,7 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#banner">
-                        uav
+                        uav <!-- replace with logo -->
                     </a>
                 </li>
                 <li>
@@ -110,6 +113,17 @@
 					</div>
 				</div>
 				
+				<div class = "row" id="call-to-action">
+					<div class="col-md-12">
+						<div class="centerBlock">
+						<h1>The largest video gaming club on campus.</h1>
+						</div>
+						<div class="centerBlock" style="position:relative; top: -20px">
+						<h3> That's us. <a class="colorlink" href="">Join us now.</a></h3>
+						</div>
+					</div>
+				</div>
+				
 				<div class="row" id="home">
 					<div class="col-md-6">
 						<h2>Who are we?</h2>
@@ -129,9 +143,9 @@
 						<p>We host <b>LAN parties</b> throughout the year, we throw <b>gaming competitions</b>, 
 						we give out <b>prizes</b> and provide our members with <b>discounts</b> to stores
 						such as JB Hi-Fi and PB Tech, and we also shout our members <b>pizza</b> on occasion.
-						We hook our members up with exclusive events and deals - last year we ran several competitions,
+						We hook our members up with <b>exclusive events and deals</b> - last year we ran several competitions,
 						including Dota 2, CS:GO, Hearthstone, and League of Legends events,
-						and collaborating with the University of Auckland Business School, as well as other New Zealand Universities such as 
+						and collaborating with the University of Auckland Business School, as well as other New Zealand universities such as 
 						Otago and Victoria University. <!-- TODO: shout out to sponsors -->
 						Sound good? For five dollars, you gain this much 
 						and more for the whole year - <a href="">click here to sign up.</a></p>
