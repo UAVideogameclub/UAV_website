@@ -99,12 +99,14 @@ body{
     width: 100%;
     position: relative;
     padding: 0px;
+	margin-bottom: 200px;
 }
 
 #wrapper.toggled #page-content-wrapper {
     position: relative;
     margin-right: -150px;
 }
+
 
 /* Sidebar Styles */
 
