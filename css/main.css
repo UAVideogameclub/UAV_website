@@ -28,7 +28,7 @@ h1{
 
 #sidebar-wrapper {
     z-index: 1000;
-    position: fixed;
+    position: fixed	!important;
     left: 150px;
     width: 0;
     height: 100%;
@@ -43,7 +43,7 @@ h1{
 
 #sidebar-wrapper2 {
     z-index: 1000;
-    position: fixed;
+    position: fixed	!important;
     left: 0px;
     width: 50px;
     height: 100%;
@@ -103,12 +103,14 @@ h1{
     width: 100%;
     position: relative;
     padding: 0px;
+	margin-bottom: 200px;
 }
 
 #wrapper.toggled #page-content-wrapper {
     position: relative;
     margin-right: -150px;
 }
+
 
 /* Sidebar Styles */
 
